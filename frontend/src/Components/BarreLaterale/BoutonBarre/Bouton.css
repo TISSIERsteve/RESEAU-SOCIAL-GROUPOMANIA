@@ -1,0 +1,10 @@
+/* Boutton Barre latérale */
+.button_sidebar {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background-color: #f8f8f8;
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+}

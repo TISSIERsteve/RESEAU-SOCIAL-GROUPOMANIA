@@ -1,0 +1,52 @@
+/* Barre Latérale */
+.aside_form {
+  position: absolute;
+  display: none;
+  right: 0rem;
+  top: 0rem;
+}
+
+.aside_form.active {
+  position: absolute;
+  display: inherit;
+  right: 25rem;
+  top: 2.5rem;
+}
+
+.aside {
+  position: absolute;
+  width: 25rem;
+  height: 27.5rem;
+  border: 1px solid black;
+  margin-top: 2.5rem;
+  background-color: #efefef;
+  z-index: 1000;
+}
+
+.aside li {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.lienAside {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.lienAside:hover {
+  transform: none;
+  color: inherit;
+}
+
+.aside li .fas {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aside li .fas:hover {
+  color: red;
+  transform: scale(1.2);
+}

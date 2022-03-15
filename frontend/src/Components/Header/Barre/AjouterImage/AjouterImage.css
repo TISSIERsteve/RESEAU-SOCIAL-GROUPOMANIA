@@ -1,0 +1,83 @@
+/* Ajouter Image */
+.addPickItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addPickItem_titre {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.addPickItem_form {
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 560px) {
+  .addPickItem_form {
+    width: 90%;
+  }
+}
+
+.addPickItem_file_input {
+  width: 100%;
+  border: 2px solid black;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.addPickItem_img {
+  width: 34%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.addPickItem_file {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addPickItem_file_item {
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.addPickItem_button {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.addPickItem_item {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.brt {
+  width: 45%;
+}
+
+.animation {
+  animation: anim 8s linear;
+}
+@keyframes anim {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

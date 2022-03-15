@@ -1,0 +1,51 @@
+/* Barre des messages */
+.profileScreenPrenom {
+  width: 30%;
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+.profileScreen_BarreRecherche {
+  position: relative;
+  width: 55%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 605px) {
+  .profileScreen_BarreRecherche {
+    width: 95%;
+  }
+  .profileScreenPrenom {
+    width: 95%;
+  }
+}
+
+.profileScreenInput {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.add {
+  /* Bouton a modifier probleme */
+  position: absolute;
+  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.add:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+  color: green;
+}
+
+.profileScreenInput::placeholder {
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,47 @@
+/* Barre container */
+.container {
+  background-color: rgb(209, 205, 207);
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+
+ul.profileScreenTele {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profileScreenTele {
+  display: flex;
+  justify-content: center;
+}
+
+.profileScreenTele li {
+  text-align: center;
+  width: 100%;
+  border-right: 1px solid black;
+  cursor: pointer;
+}
+
+.profileScreenTele li:last-child {
+  border-right: none;
+}
+
+.fa-camera {
+  color: green;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+.fa-camera:hover::after {
+  content: "Ajouter une photo";
+  color: black;
+  margin-left: 0.5rem;
+}
+
+.fa-camera:hover {
+  transform: scale(1.1);
+  transition: ease-out 3s;
+}

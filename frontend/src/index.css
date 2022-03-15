@@ -1,0 +1,91 @@
+/* App */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.grid-container {
+  /* max-width: 140rem;
+    margin: 0 auto; */
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(70deg, rgba(18, 83, 119, 1), rgb(65, 129, 163));
+  position: relative;
+}
+
+.logo_entreprise {
+  height: 25rem;
+  display: flex;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+  background: linear-gradient(70deg, rgba(18, 83, 119, 1), rgb(65, 129, 163));
+}
+
+.piedPage {
+  font-size: 1.5rem;
+}
+
+.profileScreenDate {
+  position: absolute;
+  right: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 710px) {
+  .profileScreenDate {
+    display: none;
+  }
+}
+
+.label {
+  display: none;
+}

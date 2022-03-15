@@ -1,0 +1,20 @@
+/* Card Principal */
+.boutton_commenter {
+  width: 5rem;
+}
+
+.boutton_commenter:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: green;
+  font-weight: bold;
+}
+
+.getAllImage_image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}

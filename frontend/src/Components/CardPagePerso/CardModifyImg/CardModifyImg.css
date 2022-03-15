@@ -1,0 +1,39 @@
+/* CardModifyImg */
+.modify_img {
+  display: none;
+}
+
+.modify_img.active {
+  display: inherit;
+}
+
+.addPickItem_button_img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.addModifyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.addPickItem_form_modify {
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+.addPickItem_item_img {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.brt_img {
+  text-align: center;
+  width: 7rem;
+}

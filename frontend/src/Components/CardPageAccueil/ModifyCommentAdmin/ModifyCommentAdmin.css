@@ -1,0 +1,30 @@
+/* CardModifyAdmin */
+.cardModifyCommentAdmin {
+  width: 100%;
+  z-index: 1000;
+}
+
+.admin_img_card {
+  height: 2.8rem;
+}
+
+.input_admin {
+  width: 90%;
+  border: 0.5rem;
+}
+
+.form {
+  width: 100%;
+  background-color: rgb(184, 179, 181);
+  border: 1px solid white;
+}
+
+.btn_modify {
+  background-color: rgb(184, 179, 181);
+}
+
+.fond {
+  background-color: rgb(184, 179, 181);
+  width: 100%;
+  border-radius: 0.5rem;
+}

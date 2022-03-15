@@ -1,0 +1,67 @@
+/* Page d'accueil*/
+.card {
+  border: none;
+  background-color: rgb(209, 205, 207);
+  border-radius: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card {
+    width: 98%;
+  }
+}
+
+.profileCommentImage {
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.profileName {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  width: 82%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: bold;
+  color: #000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profileComment {
+  background-color: rgb(231, 224, 228);
+  width: 80%;
+  border: none;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profileComments {
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.admin_img_card {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: 1rem auto;
+}

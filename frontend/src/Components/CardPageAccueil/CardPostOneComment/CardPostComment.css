@@ -1,0 +1,54 @@
+/* Post Comment */
+.profilesCommentsInput.open {
+  display: none;
+}
+
+.profilesCommentsInput.active {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profilesComments {
+  border: none;
+  background-color: rgb(243, 238, 241);
+  padding: 1rem;
+  width: 80%;
+  text-align: left;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* .form {
+    width: 50%;
+} */
+
+.profilesComments.modify {
+  width: 80%;
+}
+
+.profilesComments::placeholder {
+  color: #000;
+}
+
+.btn_modify {
+  border: none;
+  width: 0;
+  height: 0;
+}
+
+.valide {
+  position: relative;
+  top: 1.75rem;
+  left: 0.5rem;
+  font-size: 2rem;
+}
+
+.valide:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  font-weight: bold;
+  color: green;
+}

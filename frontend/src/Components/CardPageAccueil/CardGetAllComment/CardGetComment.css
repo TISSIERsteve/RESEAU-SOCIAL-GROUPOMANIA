@@ -1,0 +1,104 @@
+/* GetComment */
+.fieldset {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+  background-color: #d1cdcf;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.getcomment_fieldset:hover {
+  transform: scale(1.1);
+}
+.get {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.getsection {
+  display: none;
+}
+
+.getsection.active {
+  display: inherit;
+}
+
+.getcomment {
+  width: 100%;
+  border: 2px solid white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.getcomment_prenom {
+  font-weight: bold;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+.getcomment_content {
+  background-color: white;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.commentary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.pen.commentary,
+.trash.commentary {
+  width: 100%;
+}
+
+.deleModif {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.section_modify_comment_accueil {
+  display: none;
+}
+
+.section_modify_comment_accueil.active {
+  display: inherit;
+}
+
+.accueil_input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.validate_accueil {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.accueil {
+  font-size: 1.5rem;
+}
+
+.accueil:hover:before {
+  content: "Valider";
+  color: red;
+  transition: 1s;
+  transform: scale(1.2);
+}

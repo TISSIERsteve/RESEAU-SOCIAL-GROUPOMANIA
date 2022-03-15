@@ -1,0 +1,47 @@
+/* CardLike */
+.btn_like {
+  width: 100%;
+  border: none;
+  background-color: #d1cdcf;
+  margin-right: 1rem;
+}
+
+.btn_like p {
+  font-size: 1.6rem;
+}
+
+.like_dislike {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.up:hover {
+  color: green;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action {
+  color: blue;
+}
+
+.noaction {
+  color: black;
+}
+
+.couleur {
+    display: none;
+}
+
+.couleur.active {
+    display: inherit;
+}
+
+.aime {
+    color: aqua;
+}

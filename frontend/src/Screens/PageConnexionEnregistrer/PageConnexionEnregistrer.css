@@ -1,0 +1,42 @@
+/* Page de connexion*/
+.homeScreen {
+  max-width: 60rem;
+  margin: 15rem auto;
+  background-color: rgb(240, 233, 233);
+  padding: 1rem;
+}
+
+.homeScreen_navLink {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+.homeScreen_title,
+.homeScreen_navLink_item {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.homeScreen_navLink_item {
+  display: flex;
+  justify-content: space-between;
+  width: 35rem;
+  margin: 8rem auto;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(212, 17, 17);
+  transform: scale(1.1);
+}
+
+.homeScreen_img1 {
+  width: 25rem;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}

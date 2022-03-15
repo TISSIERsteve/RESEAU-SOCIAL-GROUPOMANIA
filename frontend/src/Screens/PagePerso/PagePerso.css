@@ -1,0 +1,76 @@
+/* Page Perso.css */
+.persoprofilescreen_prenom {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.profileScreenEntete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rem;
+}
+
+.cardProfilePerso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trash {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.poubelle {
+  padding: 0.5rem;
+}
+
+.poubelle:hover:before {
+  content: "Supprimer";
+  color: red;
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.poubelle_img {
+  padding: 0.5rem;
+}
+
+.poubelle_img:hover:before {
+  content: "Supprimer l'image";
+  color: red;
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.pen {
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+  justify-content: flex-end;
+}
+
+.stylo:hover:before {
+  content: "Modifier";
+  color: red;
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.stylo {
+  padding: 0.5rem;
+}
+
+.stylo_img:hover:before {
+  content: "Modifier l'image";
+  color: red;
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.stylo_img {
+  padding: 0.5rem;
+}
