@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 15 mars 2022 à 12:33
+-- Généré le : mar. 15 mars 2022 à 13:56
 -- Version du serveur : 10.4.21-MariaDB
 -- Version de PHP : 8.0.12
 
@@ -35,6 +35,13 @@ CREATE TABLE `comment` (
   `fk_id_message` int(10) UNSIGNED DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Déchargement des données de la table `comment`
+--
+
+INSERT INTO `comment` (`comment_id`, `content`, `fk_id_user`, `fk_id_post`, `fk_id_message`) VALUES
+(166, 'Test m', 151, NULL, 137);
+
 -- --------------------------------------------------------
 
 --
@@ -65,6 +72,13 @@ CREATE TABLE `messageperso` (
   `dislikes_id` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Déchargement des données de la table `messageperso`
+--
+
+INSERT INTO `messageperso` (`message_perso_id`, `prenom`, `date`, `commentaire`, `fk_id_user`, `likes_id`, `dislikes_id`) VALUES
+(137, 'Steve', '2022-03-15 13:48:38', 'Post de steve test admin', 151, '[151]', '[]');
+
 -- --------------------------------------------------------
 
 --
@@ -81,6 +95,13 @@ CREATE TABLE `post` (
   `likes_id` longtext NOT NULL,
   `dislikes_id` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `post`
+--
+
+INSERT INTO `post` (`post_id`, `created_at`, `title`, `fk_id_user`, `media_url`, `content`, `likes_id`, `dislikes_id`) VALUES
+(117, '2022-03-15 13:48:21', 'Capture', 151, 'http://localhost:3001/images/Choix1647348501138.png', 'Steve', '[151]', '[]');
 
 -- --------------------------------------------------------
 
@@ -152,25 +173,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `comment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `comment_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
 
 --
 -- AUTO_INCREMENT pour la table `messageperso`
 --
 ALTER TABLE `messageperso`
-  MODIFY `message_perso_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
+  MODIFY `message_perso_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
 
 --
 -- AUTO_INCREMENT pour la table `post`
 --
 ALTER TABLE `post`
-  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `post_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=163;
+  MODIFY `user_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
 
 --
 -- Contraintes pour les tables déchargées

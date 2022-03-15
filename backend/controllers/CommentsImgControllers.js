@@ -50,10 +50,12 @@ exports.getOneCommentImg = (req, res, next) => {
         `SELECT comment_id, content, user_id, prenom FROM comment JOIN user ON fk_id_user = user_id WHERE fk_id_post = ? ORDER BY content DESC`,
         (err, result) => {
             if (err) {
+                console.log(err);
                 return res
                     .status(403)
                     .json({ message: "Accès refusé du commentaire poster" });
             } else {
+                console.log(result);
                 return res.status(200).json({
                     result
                 });

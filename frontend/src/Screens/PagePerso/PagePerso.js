@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
 
 // Components
-import CardGetAllCommentImage from "../../Components/CardPageAccueil/CardGetAllCommentImage/CardGetAllCommentImage";
+import CardGetAllCommentImage from "../../Components/CardPagePerso/CardGetAllCommentImage/CardGetAllCommentImage";
 import CardModifyComment from "../../Components/CardPagePerso/CardModifyComment.js/CardModifyComment";
 import SeeComment from "../../Components/CardPagePerso/CardGetAllComment/CardGetAllComment";
 import CardModifyImg from "../../Components/CardPagePerso/CardModifyImg/CardModifyImg";

@@ -14,6 +14,7 @@ import "./PageAccueil.css";
 
 // ===== Page principal accueil =====
 function PageAccueil() {
+
     const [isAdmin, setIsAdmin] = useState(0);
     useEffect(
         () => {

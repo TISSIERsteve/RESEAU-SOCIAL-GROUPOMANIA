@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 // Components pour obtenir un commentaire poster sur une image page perso
 function CardGetAllCommentImage(props) {
+
     const [com, setcom] = useState("");
 
     // Ouverture fenêtre
@@ -22,6 +23,7 @@ function CardGetAllCommentImage(props) {
                 `http://localhost:3001/api/contentImg/${props.idImg}`
             ).then(response => {
                 setcom(response.data.result);
+                console.log(response.data.result);
             });
         },
         [props.idImg]
