@@ -7,6 +7,7 @@ import "./CardGetComment.css";
 
 // ===== Components pour VOIR LES COMMENTAIRES MESSAGES dans card page accueil =====
 function CardGetComment(props) {
+
     let isAdmin = props.isAdmin;
     const authUser = parseInt(localStorage.id, 10);
     const prenom = JSON.parse(localStorage.prenom);

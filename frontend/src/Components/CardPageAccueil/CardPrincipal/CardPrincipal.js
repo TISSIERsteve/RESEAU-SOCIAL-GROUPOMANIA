@@ -10,10 +10,10 @@ import CardLikeImage from "../CardLike/CardLikeImage";
 import CardGetAllCommentImage from "../CardGetAllCommentImage/CardGetAllCommentImage";
 import CardModifyCommentAdmin from "../ModifyCommentAdmin/ModifyCommentAdmin";
 import CardModifyImgAdmin from "../CardModifyImgAdmin/CardModifyImgAdmin";
+import CardLikeMessage from "../CardLike/CardLikeMessage";
 
 // CSS
 import "./CardPrincipal.css";
-import CardLikeMessage from "../CardLike/CardLikeMessage";
 
 // ===== Components Card Page principal accueil =====
 function CardPrincipal({ isAdmin }) {
